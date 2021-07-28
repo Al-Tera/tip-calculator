@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="stylesheet" href="index.css">
+  <script src="index.js" defer></script>
+  <title>Tip calculator app</title>
+</head>
+
+<body>
+  <img class="logo" src="images/logo.svg" alt="" srcset="">
+  <div class="container">
+    <div class="white_side">
+      <h1>Bill</h1>
+      <div class="bill_field">
+        <img src="images/icon-dollar.svg" alt="" srcset="">
+        <input class="bill_input" type="number" placeholder="0" min="0">
+      </div>
+      <h1>Select Tip %</h1>
+      <div class="tip_container">
+        <button class="tip tip5" value="5">5%</button>
+        <button class="tip tip10" value="10">10%</button>
+        <button class="tip tip15" value="15">15%</button>
+        <button class="tip tip25" value="25">25%</button>
+        <button class="tip tip50" value="50">50%</button>
+        <input class="tip tipcustom" placeholder="Custom" type="number" min="0" oninput="validity.valid||(value='');">
+      </div>
+      <div class="people">
+        <h1>Number of People</h1>
+        <h1 class="rednote">Can't be zero</h1>
+      </div>
+      <div class="people_field">
+        <img class="image" src="images/icon-person.svg" alt="" srcset="">
+        <input class="people_input" type="number" placeholder="0" min="0" oninput="validity.valid||(value='');">
+      </div>
+    </div>
+    <div class="dark_side">
+      <div class="top">
+          <h2 class="tipamounttext">Tip Amount</h2>
+          <h2 class="totaltext">Total</h2>
+      </div>
+      <div class="bottom"><button class="reset_button">RESET</button></div>
+    </div>
+  </div>
+
+</body>
+</html>
